@@ -1,0 +1,566 @@
+{
+ "start": "2026-11-25T02:41:02.910Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-25T02:44:15.483Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 8,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-25T02:46:41.800Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 5,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-25T02:49:17.891Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 3,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "dist/index.html",
+  "dir": "/home/user/wellnessvellum",
+  "kind": "software",
+  "start": "2026-11-25T02:41:02.910Z",
+  "by": "start.mjs",
+  "url": null,
+  "root": "dist",
+  "category": "educational content management for adult wellness organizations",
+  "primary": "Book a demo"
+ },
+ "manual": true,
+ "roundKey": "6faa958d163b4220:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "6faa958d163b4220",
+ "page": "dist/index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "copy-headings",
+    "where": "div.wrap > div.grid > article.card.card--row:nth-of-type(1) > h3 \"Gap reports for each topic area\"",
+    "msg": "\"Gap reports for each topic area\" names no product, part, place or section (10 headings like it; at most one brand line per page) (and 9 more like it: \"Accessibility checks for\", \"Upload leaflets and cour\", \"Reviewer approval of eac\", \"Library search and gap r\", ...)",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headings"
+    ],
+    "wheres": [
+     "div.wrap > div.grid > article.card.card--row:nth-of-type(1) > h3 \"Gap reports for each topic area\""
+    ]
+   },
+   {
+    "check": "off-viewport",
+    "where": "header.nav > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "at 320px wide it runs 2px past the screen's right edge (cut there: the page clips what runs past it)",
+    "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+    "widths": [
+     320
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-viewport"
+    ],
+    "wheres": [
+     "header.nav > div.wrap.nav__bar > button.nav__toggle"
+    ]
+   },
+   {
+    "check": "neighbour",
+    "where": "#how section.section \"How a resource enters the librar\"",
+    "msg": "framed, 49px of #platform section.section \"WellnessVellum’s library platfor\" shows",
+    "fix": "keep the next section's heading and picture out of this screen",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "neighbour"
+    ],
+    "wheres": [
+     "#how section.section \"How a resource enters the librar\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "overlap-text",
+    "where": "div.app__pane.app__pane--open > div.ui.ui-doc > aside.ui-doc__note.ui-panel > div.ui-doc__msg \"Confirm current turnaround times with th\"",
+    "msg": "inside div.ui.ui-doc, a box sits on the mock's own text and hides it mid-line (\"Testing is available at most g\") (and 1 more like it: \"Reviewer note Confirm cu\")",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.d-rows > div.d-row:nth-of-type(1) > div > b \"Consent and communication\"",
+    "msg": "shortened with an ellipsis (and 3 more like it: \"Contraception options ex\", \"STI testing, what to exp\", \"Pelvic health after chil\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#how \"How a resource enters the library Upload\"",
+    "msg": "starts \"border-left-color\" (0.3 s) the moment it is scrolled into view (an IntersectionObserver) on li.mo-pc__step:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "pinned",
+    "where": "section#how > div.wrap.mo-pc__grid \"How a resource enters the library Upload\"",
+    "msg": "held on screen for 1 screen of scroll (position: sticky) while the page moves on (inside a dealt moment's section, [data-moment]: expected on every kind, two moments at most, house rule; its still is judged under reduced motion)",
+    "fix": "let the section scroll with the page",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#pilot \"Book a demo of the library\"",
+    "msg": "pictures, effects and mocks cover 21% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "text-only",
+    "where": "section#faq \"Questions\"",
+    "msg": "the section is only text: no picture, icon, mock or effect in it",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "dark-ground",
+    "where": "section#how > div.wrap.mo-pc__grid > div.mo-pc__visuals.frame",
+    "msg": "the ground behind the UI is nearly as light as the UI on it (white on near-white) (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "light the ground behind the UI (a daylight data-fx-palette): at least 3:1 against the card",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#how \"How a resource enters the library\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "contrast",
+    "where": "div.grid.fill > article.card.card--row:nth-of-type(1) > div.panel.founder__panel > span.founder__mono \"NE\"",
+    "msg": "large text over a effect reads at 1.4:1 at its worst tenth (needs 3:1) (and 1 more like it: \"AN\")",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.at-rise.fit > div.ui.ui-panel > div.ui-chat__input > span.ui-chat__ph \"Ask a question\"",
+    "msg": "8 lines of text in drawn mocks read under 4.5:1 (3 colour pairs), the worst \"Ask a question\" in #7b878d on #f8f6f7 at 3.43:1",
+    "fix": "lift the mocks' muted text (labels, meta, initials) to 4.5:1 on their own panel, or set it larger",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--split / section#product",
+    "msg": "178px between these sections, -26% against the median 241px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#platform / section#team",
+    "msg": "354px between these sections, +47% against the median 241px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#faq / section#pilot",
+    "msg": "322px between these sections, +34% against the median 241px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#pilot / footer#contact",
+    "msg": "uneven space at the edge of a band: 250px outside its edge, 114px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "proximity",
+    "where": "div.wrap > div.grid.fill > article.card.card--row:nth-of-type(1) > h3 \"Nathaniel Edeh\"",
+    "msg": "touches the picture or panel above it (1px) (and 1 more like it: \"Amaka Nwosu\")",
+    "fix": "leave 8px or more between a picture and its caption, and more between rows than inside a row",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.wrap.nav__bar > nav.nav__links > div.nav__item:nth-of-type(1) > a.nav__link \"Product\"",
+    "msg": "\"Product\" opens a section headed \"Every education resource in one library\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__item:nth-of-type(1) > div.nav__menu > div.wrap.grid > a.menu-card.span-4:nth-of-type(1) \"Menopause and wellbeingnowClassified und\"",
+    "msg": "\"Menopause and wellbeingnowClassified und\" opens a section headed \"Every education resource in one library\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__item:nth-of-type(1) > div.nav__menu > div.wrap.grid > a.menu-card.span-4:nth-of-type(2) \"Gap found1dNo materials on pelvic floor \"",
+    "msg": "\"Gap found1dNo materials on pelvic floor \" opens a section headed \"Four library tools for wellness educators. A quali\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__item:nth-of-type(1) > div.nav__menu > div.wrap.grid > a.menu-card.span-4:nth-of-type(3) \"Review, consent guide1 of 2Clinical accu\"",
+    "msg": "\"Review, consent guide1 of 2Clinical accu\" opens a section headed \"How a resource enters the library\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.wrap.nav__bar > nav.nav__links > div.nav__item:nth-of-type(2) > a.nav__link \"Features\"",
+    "msg": "\"Features\" opens a section headed \"Four library tools for wellness educators. A quali\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.wrap.nav__bar > nav.nav__links > div.nav__item:nth-of-type(3) > a.nav__link \"Review\"",
+    "msg": "\"Review\" opens a section headed \"How a resource enters the library\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.wrap.nav__bar > nav.nav__links > div.nav__item:nth-of-type(5) > a.nav__link \"Team\"",
+    "msg": "\"Team\" opens a section headed \"WellnessVellum’s founders\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "h2#principle-h \"Educators approve every resource\"",
+    "msg": "a section heading of 4 words on 4 lines at 129.6px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section#faq \"Questions\"",
+    "msg": "1 section over 90 words a screen outside the UI mocks (\"Questions\" 109); 45 words a screen across the page (500 words in 11 screens): a tech page says it in about 80 or fewer",
+    "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header.nav",
+    "msg": "the nav stays on screen with 5 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "button-contrast",
+    "where": "div.hero-text.grid > div.hero__text.span-5 > div.btn-row > a.btn.btn--secondary \"Open the demo\"",
+    "msg": "the button \"Open the demo\" (#e4e7e9) stands only 1.18:1 off the ground around it: it reads as part of the ground, or as switched off",
+    "fix": "give the button a fill that stands at least 1.5:1 off what is around it, or an outline in the ink",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-count",
+    "where": "div.wrap > div.closing__cta.close--word > div.section-head--split > a.btn.btn--primary",
+    "msg": "the main action \"Book a demo\" is on 5 buttons and links: the nav, the hero and the closing call carry it; elsewhere a section has its own action",
+    "fix": "the main action in the nav, the hero and the closing call; give the other sections their own action",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "visual-caption",
+    "where": "div.ui.ui-panel > div.ui-stat__chart > div.ui-stat__axis > span:nth-of-type(1) \"Pelvic floor\"",
+    "msg": "a muted 13px line of 1 row sits 8px under the drawing (svg): it reads as a caption: \"Pelvic floor\"; no caption or description under any image, render or visual (house rule)",
+    "fix": "take the line away: no caption or description under, over or on any image, render or visual; a licence credit goes in one footer line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "visual-caption",
+    "where": "div.ui.ui-panel > div.ui-stat__chart > div.ui-stat__axis > span:nth-of-type(1) \"Jul\"",
+    "msg": "a muted 13px line of 1 row sits 8px under the drawing (svg): it reads as a caption: \"Jul\"; no caption or description under any image, render or visual (house rule)",
+    "fix": "take the line away: no caption or description under, over or on any image, render or visual; a licence credit goes in one footer line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#pilot \"Book a demo of the library\"",
+    "msg": "40% of the section is empty: 144px under its last (div.panel.pilot-panel), 20% beside content that covers under half the container, in its 720px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary:nth-of-type(2) \"book a demo\"",
+    "msg": "\"book a demo\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "form-send",
+    "where": "section#pilot > div.wrap > div.grid.grid--top > form.form.span-6 \"mailto:library@wellnessvellum.example\"",
+    "msg": "the form opens a mail to library@wellnessvellum.example: a stand-in until the client gives its form address; list it in the report",
+    "fix": "send the form to the client's address (data-endpoint) and show the confirmation only after it answers; list a mailto stand-in in the report",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "container-edges",
+    "where": "div.wrap.mo-pc__grid > div.mo-pc__text > ol.mo-pc__steps > li.mo-pc__step:nth-of-type(1) \"Upload leaflets and coursesAdd guides, l\"",
+    "msg": "3 text blocks start on a left line at x 106, 26px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"Reviewer approval of each leafle\", \"Library search and gap reportsAp\") (it is in a scroll scene: told as a WARN) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "overlap-text",
+    "where": "div.ui.app > div.app__pane.app__pane--open > div.ui.ui-doc > aside.ui-doc__note.ui-panel \"Reviewer note Confirm current turnaround\"",
+    "msg": "inside div.ui.ui-doc, a box sits on the mock's own text and hides it mid-line (\"Results usually come back with\")",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.ui.ui-panel > ul.ui-checks__list > li.ui-check:nth-of-type(3) > span.ui-check__label \"Reading level: general public\"",
+    "msg": "cut 15px at the bottom by the overflow of div.group > div.grid > article.card.card--row:nth-of-type(1) > div.panel: a fragment run out through its panel's edge",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.ui.ui-panel > ul.ui-checks__list > li.ui-check:nth-of-type(4) > span.ui-check__label \"The reviewer workflow\"",
+    "msg": "cut 5px at the bottom by the overflow of div.wrap > div.grid.grid--top > div.span-5 > div.panel.pilot-panel: a fragment run out through its panel's edge",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#platform \"WellnessVellum’s library platform on AWS\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#team \"WellnessVellum’s founders\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-cast",
+    "msg": "default-cast names: Okafor",
+    "fix": "person names come only from the brief; a mock's names fit its locale and are not the names every model picks (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "copy x1: \"Okafor\"",
+    "exact": false
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 130,
+   "layout": 4
+  }
+ },
+ "open": [
+  {
+   "check": "copy-headings",
+   "where": "div.wrap > div.grid > article.card.card--row:nth-of-type(1) > h3 \"Gap reports for each topic area\"",
+   "msg": "\"Gap reports for each topic area\" names no product, part, place or section (10 headings like it; at most one brand line per page) (and 9 more like it: \"Accessibility checks for\", \"Upload leaflets and cour\", \"Reviewer approval of eac\", \"Library search and gap r\", ...)",
+   "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headings"
+   ],
+   "wheres": [
+    "div.wrap > div.grid > article.card.card--row:nth-of-type(1) > h3 \"Gap reports for each topic area\""
+   ]
+  },
+  {
+   "check": "off-viewport",
+   "where": "header.nav > div.wrap.nav__bar > button.nav__toggle",
+   "msg": "at 320px wide it runs 2px past the screen's right edge (cut there: the page clips what runs past it)",
+   "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+   "widths": [
+    320
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-viewport"
+   ],
+   "wheres": [
+    "header.nav > div.wrap.nav__bar > button.nav__toggle"
+   ]
+  },
+  {
+   "check": "neighbour",
+   "where": "#how section.section \"How a resource enters the librar\"",
+   "msg": "framed, 49px of #platform section.section \"WellnessVellum’s library platfor\" shows",
+   "fix": "keep the next section's heading and picture out of this screen",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "neighbour"
+   ],
+   "wheres": [
+    "#how section.section \"How a resource enters the librar\""
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 39,
+ "at": "2026-11-25T02:49:17.891Z",
+ "openTold": true
+}

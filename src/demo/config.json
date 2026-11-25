@@ -1,0 +1,179 @@
+{
+  "name": "WellnessVellum",
+  "primary": "Book a demo",
+  "accent": "#0d7480",
+  "ink": "#1f3038",
+  "bg": "#f7f9fa",
+  "surface": "#ecf0f2",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400..700&family=JetBrains+Mono:wght@400..500&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Host Grotesk\", system-ui, sans-serif",
+  "fontText": "\"Host Grotesk\", system-ui, sans-serif",
+  "client": "Lagos Health Educators",
+  "note": "Fixed library data. Search and classification here run on fixed data in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Library",
+    "records": "Resources",
+    "queue": "Review queue"
+  },
+  "overview": {
+    "title": "Library this quarter",
+    "kpis": [
+      [
+        "Approved resources",
+        "298"
+      ],
+      [
+        "In review",
+        "14"
+      ],
+      [
+        "Topics covered",
+        "34 of 40"
+      ],
+      [
+        "Searches with no match",
+        "41"
+      ]
+    ],
+    "chart": {
+      "title": "Approved resources per topic area",
+      "labels": [
+        "CC",
+        "CO",
+        "ME",
+        "PH",
+        "ST",
+        "FE",
+        "RE",
+        "CL"
+      ],
+      "values": [
+        42,
+        38,
+        21,
+        17,
+        26,
+        9,
+        33,
+        18
+      ],
+      "threshold": 10,
+      "thresholdLabel": "Under 10 is a gap",
+      "caption": "Topic areas below the line are listed in the knowledge gap report."
+    }
+  },
+  "records": {
+    "title": "Education resources",
+    "searchHint": "Title or topic",
+    "statusCol": 3,
+    "columns": [
+      "Resource",
+      "Topic",
+      "Audience",
+      "Status",
+      "Pages",
+      "Added"
+    ],
+    "tones": {
+      "In review": "warn",
+      "Needs update": "bad",
+      "Approved": "good"
+    },
+    "rows": [
+      [
+        "Consent and communication",
+        "Relationships",
+        "Adults",
+        "Approved",
+        "12",
+        "1 Dec"
+      ],
+      [
+        "Contraception options explained",
+        "Contraception",
+        "Adults",
+        "Approved",
+        "4",
+        "30 Nov"
+      ],
+      [
+        "Menopause and wellbeing",
+        "Menopause",
+        "Adults",
+        "In review",
+        "18",
+        "29 Nov"
+      ],
+      [
+        "Talking with patients about intimacy",
+        "Clinical training",
+        "Clinicians",
+        "Approved",
+        "22",
+        "28 Nov"
+      ],
+      [
+        "STI testing, what to expect",
+        "Sexual health",
+        "Adults",
+        "Needs update",
+        "3",
+        "27 Nov"
+      ],
+      [
+        "Pelvic health after childbirth",
+        "Pelvic health",
+        "Adults",
+        "In review",
+        "9",
+        "26 Nov"
+      ],
+      [
+        "Fertility basics",
+        "Fertility",
+        "Adults",
+        "In review",
+        "5",
+        "25 Nov"
+      ],
+      [
+        "Healthy relationships",
+        "Relationships",
+        "Adults",
+        "Approved",
+        "14",
+        "24 Nov"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Resources waiting for review",
+    "lead": "Each item shows its suggested topics. Nothing is published until a reviewer approves it.",
+    "items": [
+      {
+        "id": "meno",
+        "title": "Menopause and wellbeing course",
+        "detail": "Six lessons, adults.",
+        "reason": "Suggested topics: menopause, wellbeing, sleep."
+      },
+      {
+        "id": "pelvic",
+        "title": "Pelvic health after childbirth guide",
+        "detail": "Nine pages, adults.",
+        "reason": "Suggested topics: pelvic health, postnatal care."
+      },
+      {
+        "id": "fert",
+        "title": "Fertility basics leaflet",
+        "detail": "Five pages, adults.",
+        "reason": "Reading level is above the library target."
+      },
+      {
+        "id": "sti",
+        "title": "STI testing leaflet update",
+        "detail": "Three pages, adults.",
+        "reason": "Reviewer asked to confirm result turnaround times."
+      }
+    ]
+  }
+}

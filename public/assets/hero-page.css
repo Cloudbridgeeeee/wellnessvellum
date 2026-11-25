@@ -1,0 +1,7 @@
+
+
+#packages .counter__photo { border-radius: var(--r-lg); }
+.counter__photo { position: relative; overflow: hidden; height: min(560px, var(--ly-fit)); background: var(--surface); }
+.counter__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; }
+.rows .rows__name small { display: block; font-weight: 400; color: var(--muted); font-size: var(--t-small); }
+@media (max-width: 1023px) { .counter__photo { height: auto; aspect-ratio: 4 / 5; margin-top: var(--s-7); } }

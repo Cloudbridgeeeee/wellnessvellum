@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "dir": "/home/user/wellnessvellum",
+ "kind": "software",
+ "start": "2026-11-25T02:41:02.910Z",
+ "by": "start.mjs",
+ "url": null,
+ "root": "dist",
+ "category": "educational content management for adult wellness organizations",
+ "primary": "Book a demo"
+}
